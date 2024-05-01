@@ -18,17 +18,14 @@ fetch( dataSource )
       // template
       const template =`
       <div class="swiper-slide">
-        
-         <img src="${student.Image}" />
-         <h1 style=" color: ${student.Color} ">${student.Emoji} 
-          
-         ${student.Name}
-         </h1>
-
-         <p>${student.Quote}</p>
+      <img style='border: ${student.Color} solid 10px' src="${student.Image}" alt="${student.Name}"/>
+      <h1 style='color: ${student.Color}'>
+      ${student.Name}${student.Emoji}
+      </h1>
+      <h3>Superpower is ${student.Superpower}</h3>
+      <blockquote>${student.Quote}</blockquote>
       
-
-        </div>
+    </div>
       `
       
       //  dynamically insert      
